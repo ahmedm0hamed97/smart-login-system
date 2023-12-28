@@ -29,7 +29,6 @@ function signUp() {
 
   if (!userNameValidation && !emailValidation && !passwordValidation) {
     signUpButton.disabled = "true";
-    
   }
 
   userNameSignUpInput.addEventListener("input", function () {
@@ -41,7 +40,6 @@ function signUp() {
   userPassSignUpInput.addEventListener("input", function () {
     passwordValidation();
   });
-
 
   signUpButton.addEventListener("click", function () {
     addData();
@@ -92,7 +90,7 @@ function signUp() {
     rejectMessage.classList.add("d-none");
 
     clearInputs();
-    
+
     // window.location.pathname= 'login.html';
   }
 }
