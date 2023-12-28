@@ -11,8 +11,8 @@
   <body>
     <div class="container">
       <div class="row d-flex justify-content-center my-5">
-        <div class="mainForm p-5 rounded-5 text-info ">
-          <h3 class="fs-1  mb-5 text-center">Smart Login System</h3>
+        <div class="mainForm p-5 rounded-5 text-info">
+          <h3 class="fs-1 mb-5 text-center">Smart Login System</h3>
           <div class="mb-4 px-3">
             <input
               type="text"
@@ -21,14 +21,15 @@
               class="form-control py-2 bg-transparent text-info fw-bold"
               placeholder="Enter your name..."
             />
-            <div class="userMessage alert alert-danger w-75 m-auto text-center p-2 fw-bold mt-2 d-none" >
-              <ul class="my-2 text-capitalize">
+            <div
+              class="userMessage alert alert-danger w-75 m-auto text-center p-2 fw-bold mt-2 d-none"
+            >
+              <ul class="my-2 text-capitalize ps-1">
                 <li>start with capital character</li>
-                <li>at least 3 small character </li>
-                <li>don't use special character </li>
+                <li>at least 3 small character</li>
+                <li>don't use special character</li>
               </ul>
             </div>
-
           </div>
 
           <div class="mb-4 px-3">
@@ -39,11 +40,13 @@
               class="form-control py-2 bg-transparent text-info fw-bold"
               placeholder="Enter your email..."
             />
-            <div class="emailMessage alert alert-danger w-75 m-auto text-center p-2 fw-bold mt-2 d-none" >
-              <ul class="my-2 text-capitalize">
-                <li>at least 1 character, number, special character </li>
-                <li>then must use '@gmail' </li>
-                <li>may use '.com' in end </li>
+            <div
+              class="emailMessage alert alert-danger w-75 m-auto text-center p-2 fw-bold mt-2 d-none"
+            >
+              <ul class="my-2 text-capitalize ps-1">
+                <li>at least 1 character, number, special character</li>
+                <li>then must use '@gmail'</li>
+                <li>may use '.com' in end</li>
               </ul>
             </div>
           </div>
@@ -56,33 +59,53 @@
               class="form-control py-2 bg-transparent text-info fw-bold"
               placeholder="Enter your password..."
             />
-            <div class="passMessage alert alert-danger w-75 m-auto text-center p-2 fw-bold mt-2 d-none" >
-              <ul class="my-2 text-capitalize">
-                <li>at least from 3 to 15 character, number, special character </li>
+            <div
+              class="passMessage alert alert-danger w-75 m-auto text-center p-2 fw-bold mt-2 d-none"
+            >
+              <ul class="my-2 text-capitalize ps-1">
+                <li>
+                  at least from 3 to 15 character, number, special character
+                </li>
               </ul>
             </div>
           </div>
 
-          <div class="alert alert-danger w-75 m-auto text-center p-2 fw-bold d-none" id="reject">
+          <div
+            class="alert alert-danger w-75 m-auto text-center p-2 fw-bold d-none"
+            id="reject"
+          >
             All input is required
           </div>
 
-          <div class="alert alert-success w-75 m-auto text-center p-2 fw-bold d-none" id="success">
+          <div
+            class="alert alert-success w-75 m-auto text-center p-2 fw-bold d-none"
+            id="success"
+          >
             success
             <i class="fa-regular fa-circle-check"></i>
           </div>
 
-          <div class="alert alert-danger w-75 m-auto text-center p-2 fw-bold d-none" id="messageValid">
-            Email is valid <br> go to login 
+          <div
+            class="alert alert-danger w-75 m-auto text-center p-2 fw-bold d-none"
+            id="messageValid"
+          >
+            Email is valid <br />
+            go to login
           </div>
-          
 
-          <div class="text-center pt-3" >
-            <button id="signUpBtn" class="btn btn-outline-info w-50 fw-bold"> Sign up </button>
+          <div class="text-center pt-3">
+            <button id="signUpBtn" class="btn btn-outline-info w-50 fw-bold">
+              Sign up
+            </button>
           </div>
 
-          <p class="mt-4 text-center fs-5">You have an account? 
-            <a href="./login.html"  class="text-decoration-none text-info fw-semibold ">Log in</a>
+          <p class="mt-4 text-center fs-5">
+            You have an account?
+            <a
+              href="./login.html"
+              class="text-decoration-none text-info fw-semibold"
+              >Log in</a
+            >
           </p>
         </div>
       </div>

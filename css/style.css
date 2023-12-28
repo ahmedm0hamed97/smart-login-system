@@ -1,8 +1,8 @@
 :root {
   --mainColor: #17a2b8;
-  --homeColor: #24353F;
+  --homeColor: #24353f;
 }
-body{
+body {
   background-color: var(--homeColor);
 }
 .mainForm {
@@ -19,7 +19,6 @@ input,
 button {
   border-color: var(--mainColor) !important;
   box-shadow: 0 0 10px var(--mainColor);
-  
 }
 
 .navbar-toggler {
@@ -38,13 +37,17 @@ button {
   width: 50%;
   transform: translatey(80%);
 }
-
-
+li::marker {
+  content: "=>";
+}
 @media (max-width: 400px) {
   .mainForm {
     width: 100%;
   }
   .content {
     width: 300px;
+  }
+  ul li {
+    font-size: 11px;
   }
 }
