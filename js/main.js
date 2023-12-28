@@ -27,6 +27,11 @@ function signUp() {
   var rejectMessage = document.getElementById("reject");
   var validEmailMessage = document.getElementById("messageValid");
 
+  if (!userNameValidation && !emailValidation && !passwordValidation) {
+    signUpButton.disabled = "true";
+    
+  }
+
   userNameSignUpInput.addEventListener("input", function () {
     userNameValidation();
   });
@@ -36,6 +41,7 @@ function signUp() {
   userPassSignUpInput.addEventListener("input", function () {
     passwordValidation();
   });
+
 
   signUpButton.addEventListener("click", function () {
     addData();
@@ -86,6 +92,7 @@ function signUp() {
     rejectMessage.classList.add("d-none");
 
     clearInputs();
+    
     // window.location.pathname= 'login.html';
   }
 }
