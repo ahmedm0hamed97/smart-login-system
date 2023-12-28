@@ -1,0 +1,50 @@
+:root {
+  --mainColor: #17a2b8;
+  --homeColor: #24353F;
+}
+body{
+  background-color: var(--homeColor);
+}
+.mainForm {
+  width: 75%;
+  box-shadow: 10px 20px 30px 5px #000000bd;
+}
+::placeholder {
+  color: var(--mainColor) !important;
+}
+input:focus {
+  transform: scale(1.1, 1.1);
+}
+input,
+button {
+  border-color: var(--mainColor) !important;
+  box-shadow: 0 0 10px var(--mainColor);
+  
+}
+
+.navbar-toggler {
+  color: var(--mainColor);
+  &:hover {
+    box-shadow: 0 0 5px 5px var(--mainColor);
+  }
+}
+.navbar {
+  --bs-navbar-toggler-focus-width: 0;
+  box-shadow: 0 0 30px 5px #000000d0;
+}
+
+.content {
+  box-shadow: 0 0 30px 5px #000000d0;
+  width: 50%;
+  transform: translatey(80%);
+}
+
+
+@media (max-width: 400px) {
+  .mainForm {
+    width: 100%;
+  }
+  .content {
+    width: 300px;
+  }
+}
