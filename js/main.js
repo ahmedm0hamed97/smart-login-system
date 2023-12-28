@@ -5,16 +5,18 @@ var userEmailSignUpInput = document.getElementById("emailSignUp");
 var userPassSignUpInput = document.getElementById("passwordSignUp");
 var signUpButton = document.getElementById("signUpBtn");
 
-// allData لو مش فاضيه حطها فى
-// if(JSON.parse(localStorage.getItem('YourData')) != null){
-//     allData = JSON.parse(localStorage.getItem('YourData'));
-// }
-
 currentPath = window.location.pathname;
 console.log(currentPath);
-if (currentPath == "/index.html" || currentPath == "/") {
+if (
+  currentPath == "/index.html" ||
+  currentPath == "/" ||
+  currentPath == "/smart-login-system/"
+) {
   signUp();
-} else if (currentPath == "/login.html") {
+} else if (
+  currentPath == "/login.html" ||
+  currentPath == "/smart-login-system/login.html"
+) {
   signIn();
 } else {
   enterHome();
