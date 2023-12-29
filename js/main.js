@@ -7,6 +7,7 @@ var signUpButton = document.getElementById("signUpBtn");
 
 currentPath = window.location.pathname;
 console.log(currentPath);
+console.log(typeof currentPath);
 if (
   currentPath == "/index.html" ||
   currentPath == "/" ||
@@ -112,7 +113,12 @@ function signIn() {
     for (var i = 0; i < allData.length; i++) {
       if (userEmailLoginInput.value == allData[i].email) {
         if (userPassLoginInput.value == allData[i].password) {
-          window.location.pathname = "home.html";
+          if (window.location.pathname.includes("smart-login-system")) {
+            window.location.pathname = "/smart-login-system/home.html";
+          } else {
+            window.location.pathname = "home.html";
+          }
+
           rejectLoginMessage.classList.add("d-none");
           //
           localStorage.setItem("currentUser", allData[i].name);
@@ -128,7 +134,12 @@ function signIn() {
 function enterHome() {
   var logOutBtn = document.getElementById("homeBtn");
   logOutBtn.addEventListener("click", function () {
-    window.location.pathname = "index.html";
+    if (window.location.pathname.includes("smart-login-system")) {
+      window.location.pathname = "/smart-login-system/";
+    } else {
+      window.location.pathname = "index.html";
+    }
+    // window.location.pathname = "index.html";
   });
 
   document.getElementById(
