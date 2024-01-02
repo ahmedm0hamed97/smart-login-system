@@ -113,9 +113,14 @@ function signIn() {
     for (var i = 0; i < allData.length; i++) {
       if (userEmailLoginInput.value == allData[i].email) {
         if (userPassLoginInput.value == allData[i].password) {
+          if (window.location.pathname.includes("smart-login-system")) {
+            window.location.pathname = "/smart-login-system/home.html";
+          } else {
+            window.location.pathname = "home.html";
           {
-            window.location.href = "home.html";
-          }
+          // {
+          //   window.location.href = "home.html";
+          // }
 
           rejectLoginMessage.classList.add("d-none");
           //
