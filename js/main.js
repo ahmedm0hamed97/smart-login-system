@@ -117,7 +117,7 @@ function signIn() {
             window.location.pathname = "/smart-login-system/home.html";
           } else {
             window.location.pathname = "home.html";
-          {
+          }
           // {
           //   window.location.href = "home.html";
           // }
